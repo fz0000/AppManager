@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Collections;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -50,15 +51,36 @@ namespace AppManager
             RegistryKey rk = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall");
             string tmpKey;
             string strName, strPublisher;
+            string errApps = "";
+            ArrayList tmpNames = new ArrayList();
+            toolStripProgressBar1.Maximum = dataGridView1.RowCount;
+            toolStripProgressBar1.Value = 0;
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 tmpKey = row.Tag.ToString();
                 strName = row.Cells[0].Value.ToString();
                 strPublisher = row.Cells[1].Value.ToString();
-
-                rk.CreateSubKey(tmpKey).SetValue("DisplayName", strName);
-                rk.CreateSubKey(tmpKey).SetValue("Publisher", strPublisher);
+                try
+                {
+                    rk.CreateSubKey(tmpKey).SetValue("DisplayName", strName);
+                    rk.CreateSubKey(tmpKey).SetValue("Publisher", strPublisher);
+                }
+                catch
+                {
+                    tmpNames.Add(strName);
+                }
+                toolStripProgressBar1.Value += 1;
+                errApps = string.Join(",", tmpNames.ToArray());
             }
+            if (errApps != "")
+            {
+                MessageBox.Show("The following apps are not modified:" + Environment.NewLine + Environment.NewLine + errApps);
+            }
+            else
+            {
+                MessageBox.Show("OK");
+            }
+            toolStripProgressBar1.Value = 0;
         }
         private void toolStripButtonBackup_Click(object sender, EventArgs e)
         {

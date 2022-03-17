@@ -81,8 +81,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="img\imageres_175_4.ico" />
-    <Content Include="img\imageres_229_0.ico" />
     <Content Include="img\OptionalFeatures_0_7.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
