@@ -81,6 +81,14 @@ namespace AppManager
                 MessageBox.Show("OK");
             }
             toolStripProgressBar1.Value = 0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    cell.Style.BackColor = Color.Empty;
+                }
+            }
+
         }
         private void toolStripButtonBackup_Click(object sender, EventArgs e)
         {

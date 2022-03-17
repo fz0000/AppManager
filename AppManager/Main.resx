@@ -220,18 +220,18 @@
   <data name="toolStripButtonBackup.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKGSURBVFhH7VYLT9pQFCYziw8MqPhgYxMUN4cucw42y1+c
-        00orVloeLSXCQIeOMQWy+Jpjvv8B95/07J5ajESXxRdNFr/k5ubeJv2+c+55WR5wGwQPp8n4DkeMY/MR
-        PJ0F31YYjGPzgQJGK5xmHJsP5vCj9qJkogD0wEhFMO8JmJNZGC6ZKGDqeBaGNiJmCmBhsBA2LwY+HLHw
-        bG3BTAFz4FoVzBMQqH7SnqxJ5sWAvzqjOVejJgrYD0H/FxMFvPsdgt7l2P0JYI5magzteMHjabdx1YC3
-        VQ4cufiVAgbWBY+rECGub1LNuLo+/JQcU81/ECITVdZjXJ9jYo+D7iXpUhYM5AXP068iwQB1rERvLgBJ
-        J3cp+S8Oxnc54tubb/DEm5882DOJBg8guTMnkoF8jHpHortwSfi1gCLGtnnyajMM3gpP3NS1xifL610e
-        bEvyuQB7WvAgaW8uBj1ZidjTiduR1zG6KXi8ZZ4MlxbBU1yo1a0a256HzpSiC0AyJO3+nABrRiJty6kr
-        4+bGQMv1oCqIQN+WdC1H3TgNWeW4huRdGZnY1JhmTcVrd05eB1qOLu5bOXOxtyxAhyqDVVUIeqJdjdda
-        E3fk9r/hzFqJ2NKy/v5WJFaS0CInyb2T14Ei2pMKaZOT8DiuQkssVWsVmkReB1rbIqnkkagSi5BuLvn/
-        D73+04m3vphTlu4sMCcsTNFBVN/pOIYDCa73hywEDuYgsD8H2CGxSU3SPoG9YmKH1bBiYjEzfv9v+LZ4
-        8vLHAoxs8Jq3vAhDxbDmXo/A4HcRnhdFcBUkrAXgzEehPxfR+rKi5siIWk82Dl20ENEg1TOkU6F1QVWg
-        I0kXTVXj9w+4AIvlD6VtdFOwz86PAAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKISURBVFhH7VYLT9pQFCYziw8MoqiwsQmKm0OXOQeb9Scu
+        bBTKo9DyKC0b+BpOdChmUefE+f4Hvf+kZ/dgMSO6LL5osvglNzf3Nun3nXPPy3SPm2DmMEAmfnBEP7Ye
+        M6dB8G7FQD+2HihgrBrW9GPrwRy8156tGSgAPTC6wRv3BMxJEEbWDRQwfRyE4bWkkQJYGFqOGhcD745Y
+        eLIUM1JACJyluHEC/LWA9uiraFwM+GofNMdSykAB+2EY/GKggDe/wtC/kL47AczRR5WhHW/mOODSr5rw
+        eo8D23zmUgH2Cu92lpPEuSKq+tXV4aPkmGq+gzCZ3GPd+vU5Jnc56P0kXMgCe4l3P14WCAaobTF1fQFI
+        OrVDyWscTOxwxLsbbfLEq58R6ClmmzyA5I55gdhLaeodke78BeFXAooY346QF5sx8GxEiIu6Vv9kerkT
+        Actn6VxAT4F3I2n/fBr65kTSU8jejLyBsU3e7alGyMh6AtyrcbVh1fh2FLrzuboAJEPS3tksmIsi6VjI
+        Xxo31wZaXg+qsgD0bYl1IeXCacicTWtIbi1KxCKnNHM+o946eQNoObp4YPHMxZ4qD12KBGYlR9ATnUpG
+        bc/ektv/hjNrRWIpSPX3NyNxToY2SSZ3Tt4AiuiUc6RDkuFhRoG2dF5t51tE3gBa2yYq5IGgEBNfaC35
+        /496/acTb2MxpyzdWWBOWJimg2h9p+MYDiS43h6y4D8IgX8/BNghsUlN0T6BvWJyO6hhxcRipv/+3/Bu
+        Rcjz73EYrXCap5qA4ZWo5qokYeibAE9XBXCWRawF4CilYHAuoQ3MJjVbIan1zWXASgsRDdJ6hnRLtC4o
+        OeiS6aKpqv/+Hn/AZPoNttx0L/KQBnUAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="toolStripButtonRestore.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
