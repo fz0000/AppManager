@@ -17,4 +17,4 @@ Do **NOT** use it in strange ways. For example, you should **NOT** install games
 
 3. Save
 
-![image](https://user-images.githubusercontent.com/5061311/158801888-116f7145-0746-4050-b1bd-19da0d4874bf.png)
+![image](https://user-images.githubusercontent.com/5061311/158915746-f682c90f-0b38-4702-b36e-2b8f29df5a74.png)
