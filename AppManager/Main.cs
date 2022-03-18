@@ -59,18 +59,29 @@ namespace AppManager
             {
                 tmpKey = row.Tag.ToString();
                 strName = row.Cells[0].Value.ToString();
-                strPublisher = row.Cells[1].Value.ToString();
                 try
                 {
                     rk.CreateSubKey(tmpKey).SetValue("DisplayName", strName);
-                    rk.CreateSubKey(tmpKey).SetValue("Publisher", strPublisher);
+                    if (row.Cells[1].Value == null)
+                    {
+                        RegistryKey rk_app = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\" + tmpKey);
+                        if (rk_app.GetValue("Publisher") != null)
+                        {
+                            rk.CreateSubKey(tmpKey).DeleteValue("Publisher");
+                        }
+                    }
+                    else
+                    {
+                        strPublisher = row.Cells[1].Value.ToString();
+                        rk.CreateSubKey(tmpKey).SetValue("Publisher", strPublisher);
+                    }
                 }
                 catch
                 {
                     tmpNames.Add(strName);
                 }
                 toolStripProgressBar1.Value += 1;
-                errApps = string.Join(",", tmpNames.ToArray());
+                errApps = string.Join(", ", tmpNames.ToArray());
             }
             if (errApps != "")
             {
@@ -88,7 +99,6 @@ namespace AppManager
                     cell.Style.BackColor = Color.Empty;
                 }
             }
-
         }
         private void toolStripButtonBackup_Click(object sender, EventArgs e)
         {
